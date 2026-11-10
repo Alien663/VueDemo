@@ -7,6 +7,11 @@ const routes = [
     component: () => import('../pages/HomePage.vue')
   },
   {
+    path: "/status/:status",
+    name: "HttpsStatusResponse",
+    component: () => import('../components/HttpsStatusResponse.vue')
+  },
+  {
     path: '/about',
     name: 'AboutUs',
     component: () => import('../pages/AboutUs.vue')

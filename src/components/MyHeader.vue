@@ -1,23 +1,3 @@
 <template>
-  <el-radio-group
-    :model-value="Layout"
-    @update:model-value="emit('update:Layout', $event)"
-  >
-    <el-radio-button label="default" value="default">Default</el-radio-button>
-    <el-radio-button label="custom" value="custom">Custom</el-radio-button>
-  </el-radio-group>
+  <h1>Alien663's Vue Test Demo</h1>
 </template>
-
-<script setup>
-import { defineProps, defineEmits } from "vue";
-import { ElRadioGroup, ElRadioButton } from "element-plus";
-
-defineProps({
-  Layout: {
-    type: String,
-    required: true,
-  },
-});
-
-const emit = defineEmits(["update:Layout"]);
-</script>
